@@ -99,6 +99,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     .container {
@@ -168,6 +169,42 @@ body {
 
 .ingredients, .instructions {
     margin: 30px 0;
-    border-bottom: 1px solid var(--brown-800);
+    border-bottom: 1px solid var(--stone-150);
 }
 
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nutrition .table-nutri {
+    border-collapse: collapse;
+}
+
+.nutrition .table-nutri tr td {
+    border-bottom: 1px solid var(--stone-150);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.nutrition .table-nutri tr .nutri-description {
+    padding-left: 45px;
+}
+
+.nutrition .table-nutri tr .nutri-quantity {
+    color: var(--brown-800);
+}
+
+.attribution {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--brown-800);
+}
